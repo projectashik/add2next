@@ -1,0 +1,48 @@
+{
+  "name": "add-to-next",
+  "version": "0.0.4",
+  "description": "Integrate many packages like tailwindcss with a single command in Next.js application",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format cjs,esm --clean",
+    "dev": "yarn build --watch",
+    "prepublish": "yarn build"
+  },
+  "bin": "dist/index.js",
+  "author": "Ashik Chapagain",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cac": "^6.7.12",
+    "chalk": "^5.0.0",
+    "loading-cli": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "tsup": "^5.11.13"
+  },
+  "peerDependencies": {
+    "next": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectashik/add-to-next"
+  },
+  "keywords": [
+    "tailwindcss",
+    "add-to-next",
+    "projectashik",
+    "tailwindcss-in-next.js",
+    "tailwindcss-in-nextjs",
+    "tailwindcss-in-nextjs-project"
+  ]
+}
