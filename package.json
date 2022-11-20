@@ -1,6 +1,6 @@
 {
   "name": "add-to-next",
-  "version": "0.0.12",
+  "version": "1.0.1",
   "description": "Integrate many packages like tailwindcss with a single command in Next.js application",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -21,15 +21,19 @@
   "author": "Ashik Chapagain",
   "license": "MIT",
   "dependencies": {
+    "@npmcli/package-json": "^3.0.0",
     "axios": "^0.27.2",
     "cac": "^6.7.12",
     "chalk": "^5.0.0",
     "cross-spawn": "^7.0.3",
-    "loading-cli": "^1.1.0"
+    "loading-cli": "^1.1.0",
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@types/cross-spawn": "^6.0.2",
     "@types/node": "^18.7.13",
+    "@types/npmcli__package-json": "^2.0.0",
+    "@types/prompts": "^2.4.1",
     "tsup": "^5.11.13"
   },
   "peerDependencies": {

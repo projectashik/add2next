@@ -6,8 +6,10 @@ import { tailwind } from "./controllers";
 const cli = cac();
 
 cli
-  .command("tailwind", "Add tailwind css to your Next.js project")
-  .action(tailwind);
+  .command("tailwindcss", "Add tailwind css to your Next.js project")
+  .alias("tailwind")
+  .option("--turbo", "Use turbopack mode")
+  .action((options) => tailwind(options.turbo));
 
 cli.help();
 cli.version("0.0.12");
