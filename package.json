@@ -1,6 +1,6 @@
 {
   "name": "add-to-next",
-  "version": "0.0.4",
+  "version": "0.0.12",
   "description": "Integrate many packages like tailwindcss with a single command in Next.js application",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,9 +24,11 @@
     "axios": "^0.27.2",
     "cac": "^6.7.12",
     "chalk": "^5.0.0",
+    "cross-spawn": "^7.0.3",
     "loading-cli": "^1.1.0"
   },
   "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
     "@types/node": "^18.7.13",
     "tsup": "^5.11.13"
   },
