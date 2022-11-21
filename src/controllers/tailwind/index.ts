@@ -78,6 +78,7 @@ module.exports = {
     });
 
     await pkgJson.save();
+    console.log(chalk.green("Added scripts to package.json."));
   }
 
   await install(dependencies, {
@@ -86,6 +87,9 @@ module.exports = {
     devDependencies: true,
   });
   await execute(`npx tailwindcss init -p`);
+  console.log(
+    chalk.green("Created tailwind.config.js & postcss.config.js files.")
+  );
 
   if (appFolderExists) {
     await appendToAFile("./app/globals.css", stylesContent);

@@ -1,6 +1,6 @@
 {
   "name": "add2next",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Integrate many packages like tailwindcss with a single command in Next.js application",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
