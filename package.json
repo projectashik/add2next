@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/projectashik/add-to-next"
+    "url": "git+https://github.com/projectashik/add2next"
   },
   "keywords": [
     "tailwindcss",
