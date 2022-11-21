@@ -7,6 +7,7 @@ import util from "node:util";
 export const exec = util.promisify(child.exec);
 
 export const execute = async (cmd: string) => {
+  console.log(chalk.yellow("Executing: " + cmd));
   const load = loading(`${chalk.green("Executing")} ${chalk.yellow(`${cmd}`)}`);
   const { stderr, stdout } = await exec(`${cmd}`);
   load.stop();

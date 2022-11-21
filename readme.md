@@ -1,11 +1,11 @@
-# Add To Next
+# Add2Next
 Easily integrate different packages (tailwindcss for now) into your next.js with a single command.
 
 # Usage
 
 ## Adding TailwindCSS
 ```bash
-npx add-to-next@latest tailwind
+npx add2next@latest tailwind
 ```
 What this command will do?
 - First, it will ask you to choose to install tailwindcss community packages.
@@ -15,5 +15,5 @@ What this command will do?
 
 > Note: If you are using turbopack, then add --turbo flag to the command.
 ```bash
-npx add-to-next@latest tailwind --turbo
+npx add2next@latest tailwind --turbo
 ```

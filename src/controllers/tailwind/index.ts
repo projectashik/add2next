@@ -59,6 +59,9 @@ module.exports = {
     plugins: [${packages.map((pkg: string) => `require("${pkg}")`).join(", ")}],
 };
 `;
+
+  console.log(chalk.green("Using package manager: " + packageManager));
+
   const dependencies = ["tailwindcss", "postcss", "autoprefixer", ...packages];
   if (turbo) {
     dependencies.push("concurrently");

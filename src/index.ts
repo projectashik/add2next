@@ -12,5 +12,5 @@ cli
   .action((options) => tailwind(options.turbo));
 
 cli.help();
-cli.version("0.0.12");
+cli.version("1.0.1");
 cli.parse();
